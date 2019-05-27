@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/complexJudgement.js"></script>
+    <script src="../lib/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<div onclick="multiActionsMapBranch('guest','1')">click me</div>
+
+<div onclick="multiActionsMapBranch1('master',1)">click me1</div>
+
+
+<div><label>identity:</label><input value="master" class="identity"></div>
+<div><label>status:</label><input value="1" class="status"></div>
+
+<div  class="match-test4">click me4</div>
+
+<div  class="match-test5">click me5</div>
+<script>
+
+
+
+  $(function(){
+        $('.match-test4').click(function(){
+            var identity=$('.identity').val();
+            var status=$('.status').val();
+            multiActionsMapBranch4(identity,status);
+      });
+      $('.match-test5').click(function(){
+          var identity=$('.identity').val();
+          var status=$('.status').val();
+          multiActionsMapBranch5(identity,status);
+      });
+  });
+
+
+</script>
+</body>
+</html>
